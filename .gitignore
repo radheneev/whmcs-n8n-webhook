@@ -1,0 +1,20 @@
+# IDE / Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+
+# PHP / Composer (if you add composer later)
+vendor/
+composer.lock
+
+# Node (if you add tooling later)
+node_modules/
