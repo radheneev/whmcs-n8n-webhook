@@ -1,37 +1,38 @@
-# **Installation Guide – WHMCS N8N Webhook Module**
+## **Installation Guide – WHMCS N8N Webhook Module**
 
-1. Upload module to WHMCS
+### 1. Upload module to WHMCS
 
 Upload the module folder "N8NWebhook" to your WHMCS installation:
 
 /your-whmcs-root/modules/notifications/N8NWebhook/
 
-Final structure should be:
+**Final structure should be:**
 
+```text
 modules/
 └── notifications/
     └── N8NWebhook/
         ├── N8NWebhook.php
         ├── whmcs.json
         └── logo.png
-
+```
 Note:
 This repository contains documentation/support files.
 The actual module folder (N8NWebhook) must be placed inside /modules/notifications/.
 
 ------------------------------------------------------------
 
-2. Set file permissions
+### 2. Set file permissions
 
 On your WHMCS server:
-
+```
 cd /your-whmcs-root/modules/notifications/
 chmod 755 N8NWebhook
 chmod 644 N8NWebhook/*
-
+```
 ------------------------------------------------------------
 
-3. Enable provider in WHMCS
+### 3. Enable provider in WHMCS
 
 1) Login to WHMCS Admin
 2) Go to Setup → Notifications
@@ -42,7 +43,7 @@ chmod 644 N8NWebhook/*
 
 ------------------------------------------------------------
 
-4. Create notification rules
+### 4. Create notification rules
 
 1) In Setup → Notifications, click "Create New Notification Rule"
 2) Select an event, for example:
@@ -54,7 +55,7 @@ chmod 644 N8NWebhook/*
 
 ------------------------------------------------------------
 
-5. Testing
+### 5. Testing
 
 - Create a test ticket / order / invoice
 - Confirm that the webhook is received by N8N
@@ -62,7 +63,7 @@ chmod 644 N8NWebhook/*
 
 ------------------------------------------------------------
 
-6. Troubleshooting
+### 6. Troubleshooting
 
 Issue: No webhook received in N8N
 Check: Webhook URL, WHMCS server outbound connectivity, firewall rules
@@ -75,7 +76,7 @@ Check: Enable "Debug mode" in the provider configuration
 
 ------------------------------------------------------------
 
-7. Upgrading
+### 7. Upgrading
 
 To upgrade the module:
 
@@ -83,5 +84,6 @@ To upgrade the module:
 2) Replace it with the new version of "N8NWebhook"
 3) Keep your WHMCS configuration as-is (settings are stored in DB)
 4) Test with a sample event after upgrade
+
 
 
