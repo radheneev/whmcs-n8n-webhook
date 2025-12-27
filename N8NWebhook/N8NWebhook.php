@@ -58,9 +58,9 @@ class N8NWebhook implements NotificationModuleInterface {
     /**
      * Get full logo path
      */
-    public function getLogoPath() {
-        return 'modules/notifications/' . $this->getName() . '/' . $this->getLogoFileName();
-    }
+   public function getLogoPath() {
+      return '/modules/notifications/' . $this->getName() . '/' . $this->getLogoFileName();
+   }
 
     /**
      * Global module settings - shown when activating the module
