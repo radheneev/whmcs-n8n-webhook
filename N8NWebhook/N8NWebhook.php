@@ -101,16 +101,25 @@ class N8NWebhook implements NotificationModuleInterface {
             ],
             'verify_ssl' => [
                 'FriendlyName' => 'Verify SSL Certificate',
-                'Type' => 'yesno',
-                'Description' => 'Disable only for testing with self-signed certificates',
+                'Type' => 'dropdown',
+                'Options' => [
+                'yes' => 'Yes (Recommended)',
+                'no'  => 'No (Testing / Self-signed only)',
+                             ],
                 'Default' => 'yes',
-            ],
+                'Description' => 'Controls SSL verification for webhook requests',
+                             ],
             'debug_mode' => [
                 'FriendlyName' => 'Debug Mode',
-                'Type' => 'yesno',
-                'Description' => 'Log all webhook requests to Activity Log',
-                'Default' => 'no',
-            ],
+                'Type' => 'dropdown',
+                'Options' => [
+                'no'  => 'Off',
+                'yes' => 'On (Log all webhook requests)',
+                 ],
+               'Default' => 'no',
+               'Description' => 'Enable detailed logging to WHMCS Activity Log',
+                ],
+
         ];
     }
 
