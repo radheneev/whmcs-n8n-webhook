@@ -1,3 +1,7 @@
+![GitHub stars](https://img.shields.io/github/stars/radheneev/whmcs-n8n-webhook?style=social)
+![GitHub forks](https://img.shields.io/github/forks/radheneev/whmcs-n8n-webhook?style=social)
+![License](https://img.shields.io/github/license/radheneev/whmcs-n8n-webhook)
+
 ### WHMCS → N8N Webhook Notification Module
 
 This repository contains documentation and support files for the
@@ -50,4 +54,5 @@ whmcs-n8n-webhook/
 -------
 This project is licensed under the MIT License.
 See LICENSE for details.
+
 
